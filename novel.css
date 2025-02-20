@@ -1,0 +1,160 @@
+header{
+    position: fixed;
+    width: 100%;
+    top:0%;
+    right:0%;
+    z-index: index 1000%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border: 1px solid #1b1b1b;
+    padding:18px 100px;
+    background:#1b1b1b;
+    transition:0.5s linear;
+
+}
+.logo img{
+    width: 60px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color:var(--bg-color);
+    font: size 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.navbar a:hover{
+    background-color: aqua;
+    border-radius:0.2rem;
+    transition:0.5s all linear;
+   
+
+}
+.header-icon{
+    font-size: 22px;
+    z-index: 10000;
+    cursor: pointer;
+    display:flex;
+    column-gap: 17px;
+
+}
+.header-icon .bx{
+    color: var(--bg-color)
+
+}
+#menu-icon{
+    color:var(--bg-color)
+    font-size: 24px;
+    z-index: 10001;cursor: pointer;
+    display: none;
+}
+.search-box{
+    position: absolute;
+    top: -100%;
+    left:50%;
+    transform: translate(-50%);
+    width: 100%;
+    background-color: var(--bg-color);
+    
+    
+}
+.search-box.active{
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition-duration: 0.25s all;
+    transition-property: top;
+    transition-timing-function: linear;
+}
+
+
+.search-box input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 2500px;
+    margin-top: 100px;
+}
+
+.book {
+    width: 250px; /* Adjust as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border */
+    background-color: #fff;
+    text-align: center; /* Center the content */
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    margin-bottom: 5px;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+.price {
+    text-decoration: line-through;
+    color: #777; /* Gray color for original price */
+}
+
+.discounted-price {
+    color: #f00; /* Red color for discounted price */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /* Fixed to the bottom */
+    bottom: 0;
+    width: 100%;
+}

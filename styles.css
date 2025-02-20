@@ -1,0 +1,410 @@
+*{
+    font-family: cursive;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top:  4rem;
+    scroll-behavior: smooth; 
+    list-style: none;
+    text-decoration: none;
+
+}
+:root{
+    --main-color:#ffe608;
+    --secondary-color:#edeae3;
+    --text-color:#1b1b1b;
+    --bg-color:#fff;
+
+    --box-shadow:2px 2px 10px 14px rgb(14 55 54 / 15%)
+
+}
+section{
+    padding: 100px 100px ;
+}
+
+
+img{
+    width: 100%;
+
+}
+.home-img{
+    margin-top: 3.5rem;
+}
+body{
+    color:var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0%;
+    right:0%;
+    z-index: index 1000%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border: 1px solid #1b1b1b;
+    padding:18px 100px;
+    background:#1b1b1b;
+    transition:0.5s linear;
+
+}
+.logo img{
+    width: 60px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color:var(--bg-color);
+    font: size 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.navbar a:hover{
+    background-color: aqua;
+    border-radius:0.2rem;
+    transition:0.5s all linear;
+   
+
+}
+.header-icon{
+    font-size: 22px;
+    z-index: 10000;
+    cursor: pointer;
+    display:flex;
+    column-gap: 17px;
+
+}
+.header-icon .bx{
+    color: var(--bg-color)
+
+}
+#menu-icon{
+    color:var(--bg-color)
+    font-size: 24px;
+    z-index: 10001;cursor: pointer;
+    display: none;
+}
+.search-box{
+    position: absolute;
+    top: -100%;
+    left:50%;
+    transform: translate(-50%);
+    width: 100%;
+    background-color: var(--bg-color);
+    
+    
+}
+.search-box.active{
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition-duration: 0.25s all;
+    transition-property: top;
+    transition-timing-function: linear;
+}
+
+
+.search-box input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/bookshop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-content {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.start-btn {
+    background: rgb(242, 245, 56);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+.shop-name {
+    background-color: brown;
+    color: white;
+    font-style: italic;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle i {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .shop-name {
+        font-size: 16px;
+    }
+}
+
+.about-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #edeae3;
+
+}
+.about-section {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    margin: 60px;
+}
+.vision, .mission {
+    background-image: url('img/about\ p.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    margin: 20px auto;
+    width: 90%;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.vision h2, .mission h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+}
+.vision p, .mission p {
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section h1 {
+        font-size: 28px;
+    }
+
+    .vision, .mission {
+        width: 90%;
+        padding: 30px 15px;
+    }
+
+    .vision h2, .mission h2 {
+        font-size: 24px;
+    }
+
+    .vision p, .mission p {
+        font-size: 16px;
+    }
+
+.novel-section h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #edeae3;
+
+
+}
+.about-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #edeae3;
+
+}
+.about-section {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    margin: 60px;
+}
+.novel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.novel {
+    width: 200px; /* Adjust as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.novel img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.novel h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.novel p {
+    font-size: 14px;
+}
+
+.containeradmin{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+.containeradmin .content{
+    text-align: center;
+}
+.containeradmin .content h3{
+    font-size: 30px;
+    color: #333;
+
+}
+.containeradmin .content h3 span{
+    background: red;
+    color: #ddd;
+    border-radius: 5px;
+    padding: 0 15px ;
+}
+.containeradmin .content h1{
+    font-size: 30px;
+    color: #333;
+}
+.containeradmin .content h1 span{
+    background: red;
+}
+.containeradmin .content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.containeradmin .content btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+.containeradmin .content btn:hover{
+    background: crimson;
+}
+
+
+
+.signup{
+    width:360px;
+    height: 700px;
+    margin: 6rem;
+    background: #edeae3;
+    border-radius: 3px;
+
+}
+.login{
+    width:360px;
+    height: 320px;
+    margin-top: 7rem ;
+    align-items: center;
+    background: #edeae3;
+    border-radius: 3px;
+
+
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    padding-top: 15px;
+
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border:1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+input[type="submit"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ff7200;
+    color: #f1f1f1;
+    font-size: 18px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    color: #f1f1f1;
+    background: rgb(13,211, 247);
+}
+p{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+
